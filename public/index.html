@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asanam | Playful 3D Portfolio</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- 3D Background Canvas for particles and tech spheres -->
+  <div id="bg3d"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">Asanam</span>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="profile-photo-container">
+        <!-- Profile photo (replace with your own 300x300px image in assets/) -->
+        <img src="assets/profile.jpg" alt="Profile" class="profile-photo" />
+        <div class="photo-instructions">Replace <b>assets/profile.jpg</b> with your own 300x300px photo for best results.</div>
+      </div>
+      <div class="about-card">
+        <h2>About Me</h2>
+        <p>
+          6th-semester B.Tech student at Presidency University, Bangalore, with expertise in MERN stack, Python, and AI/ML from a DRDO internship and Samsung Innovation Campus.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="tech-stack" id="tech">
+    <h2>Tech Stack</h2>
+    <div id="tech3d"></div>
+    <div class="tech-instructions">Each 3D sphere represents a technology. Replace the labels with your own logos if available.</div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Hackathon Projects</h2>
+    <div class="project-cards">
+      <div class="project-card" data-tilt>
+        <img src="https://via.placeholder.com/400x200.png?text=Project+1" alt="Project 1" class="project-thumb" />
+        <h3>Node.js Hotel Management REST API</h3>
+        <p>A RESTful API for hotel management using Node.js, Express, and MongoDB, with CRUD operations and authentication.</p>
+        <a href="https://github.com/asanam767/Node_Hotel.git" target="_blank" class="project-link">GitHub</a>
+      </div>
+      <div class="project-card" data-tilt>
+        <img src="https://via.placeholder.com/400x200.png?text=Project+2" alt="Project 2" class="project-thumb" />
+        <h3>COVID-19 Data Analysis</h3>
+        <p>A Python-based data visualization project analyzing COVID-19 trends using Pandas and Matplotlib.</p>
+        <a href="#" class="project-link">GitHub</a>
+      </div>
+      <div class="project-card" data-tilt>
+        <img src="https://via.placeholder.com/400x200.png?text=Project+3" alt="Project 3" class="project-thumb" />
+        <h3>Samsung Innovation Campus Project</h3>
+        <p>Developed AI/ML models for activity recognition using IMU data during a DRDO internship.</p>
+        <span class="project-link private">Private</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <div class="contact-icons">
+        <a href="https://github.com/asanam767" target="_blank" class="contact-icon" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        </a>
+        <a href="#" target="_blank" class="contact-icon" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+        </a>
+        <a href="mailto:your.email@example.com" class="contact-icon" aria-label="Email">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
